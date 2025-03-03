@@ -1,0 +1,29 @@
+{
+  "middlewares": ["logger"],
+  "routes": [
+    {
+      "path": "/",
+      "method": "GET",
+      "middleware": ["logger"],
+      "response": {
+        "message": "Welcome to the home page!"
+      }
+    },
+    {
+      "path": "/hello",
+      "method": "GET",
+      "middleware": [],
+      "response": {
+        "message": "Hello, world!"
+      }
+    },
+    {
+      "path": "/user",
+      "method": "POST",
+      "middleware": [],
+      "response": {
+        "message": "User created successfully!"
+      }
+    }
+  ]
+}
